@@ -1,19 +1,14 @@
-import Head from "next/head";
-import Image from "next/image";
 import styled from "styled-components";
-import Button from "../components/Button.js";
-import Card from "../components/Card";
 import CardsWrapper from "../components/CardsWrapper";
+import Nav from "../components/Nav";
 
 export default function Home() {
   return (
     <>
       <Title>Hallo Leute</Title>
-      <Button>Characters</Button>
-      <Button>Episodes</Button>
-      <CardsWrapper>
-        <Card>Character 1</Card>
-      </CardsWrapper>
+
+      <CardsWrapper></CardsWrapper>
+      <Nav></Nav>
     </>
   );
 }

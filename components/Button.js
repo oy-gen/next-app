@@ -7,10 +7,16 @@ export default function Button({ children }) {
 const StyledButton = styled.button`
   background-color: hotpink;
   border-style: none;
-  color: black;
   border-radius: 50px;
-  font-weight: bold;
   margin: 1rem;
-  padding: 0.8rem 3rem;
-  text-transform: uppercase;
+  padding: 0.8rem 0;
+
+  & a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem;
+    padding: 0.8rem 3rem;
+  }
 `;
