@@ -18,7 +18,7 @@ export default function Nav() {
       </Button>
 
       <Button>
-        <Link passHref href="/characters">
+        <Link passHref href="/episodes">
           <a>Episodes</a>
         </Link>
       </Button>
