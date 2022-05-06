@@ -1,5 +1,6 @@
 import Card from "../components/Card";
 import CardsWrapper from "../components/CardsWrapper";
+import Nav from "../components/Nav";
 import { useEffect, useState } from "react";
 
 export default function CharactersPage() {
@@ -18,12 +19,15 @@ export default function CharactersPage() {
   //   },[characterList])
 
   return (
-    <CardsWrapper>
-      {characterList.map((character) => (
-        <Card key={character.id} name={character.name}>
-          {character.name}
-        </Card>
-      ))}
-    </CardsWrapper>
+    <>
+      <CardsWrapper>
+        {characterList.map((character) => (
+          <Card key={character.id} name={character.name}>
+            {character.name}
+          </Card>
+        ))}
+      </CardsWrapper>
+      <Nav></Nav>
+    </>
   );
 }
