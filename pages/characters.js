@@ -1,5 +1,5 @@
 import Card from "../components/Card";
-import CardWrapper from "../components/CardsWrapper";
+import CardsWrapper from "../components/CardsWrapper";
 import { useEffect, useState } from "react";
 
 export default function CharactersPage() {
@@ -18,12 +18,12 @@ export default function CharactersPage() {
   //   },[characterList])
 
   return (
-    <CardWrapper>
+    <CardsWrapper>
       {characterList.map((character) => (
         <Card key={character.id} name={character.name}>
           {character.name}
         </Card>
       ))}
-    </CardWrapper>
+    </CardsWrapper>
   );
 }
