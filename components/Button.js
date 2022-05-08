@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export default function Button({ children }) {
   return <StyledButton>{children}</StyledButton>;
@@ -8,8 +8,8 @@ const StyledButton = styled.button`
   background-color: hotpink;
   border-style: none;
   border-radius: 50px;
-  margin: 1rem;
-  padding: 0.8rem 0;
+  margin: 0.6rem;
+  padding: 0.6rem 0;
 
   & a {
     text-decoration: none;
@@ -17,6 +17,6 @@ const StyledButton = styled.button`
     font-weight: bold;
     text-transform: uppercase;
     margin: 1rem;
-    padding: 0.8rem 3rem;
+    padding: 0.6rem 0.6rem;
   }
 `;

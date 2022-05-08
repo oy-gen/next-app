@@ -5,6 +5,7 @@ import useFetch from '../components/useFetch';
 
 export default function CharactersPage() {
   const { data } = useFetch('https://rickandmortyapi.com/api/character/');
+  console.log(data);
   return (
     <>
       <CardsWrapper>
