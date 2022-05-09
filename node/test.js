@@ -42,7 +42,7 @@ async function addUser(user) {
   promises.writeFile('database.json', JSON.stringify(data, null, 4));
 }
 
-// addUser({ id: nanoid(), name: 'Caro', age: 18, hobbies: ['riding unicorns'] });
+addUser({ id: nanoid(), name: 'Helene', age: 77, hobbies: ['singing'] });
 
 async function removeUser(userId) {
   const data = await getDatabase();
@@ -53,17 +53,17 @@ async function removeUser(userId) {
 
 //removeUser(1);
 
-async function updateUser(id, age) {
+async function updateUser(id, name, age, hobby) {
   const data = await getDatabase();
-  // data.users = data.users.map(user => (user.id === id ? (user.age = age): "")
-
   data.users = data.users.map(user => {
     if (user.id === id) {
+      user.name = name;
       user.age = age;
+      user.hobbies = user.hobbies.push(hobby);
     }
     return user;
   });
   promises.writeFile('database.json', JSON.stringify(data, null, 4));
 }
 
-updateUser('RyllzfcRZwTYD-RtpZkH-', 12);
+updateUser('xfVjrzqpVb9oRv77yb--W', 'Barbara Becker', 45, 'Tennis');
