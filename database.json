@@ -1,0 +1,21 @@
+{
+    "products": [],
+    "users": [
+        {
+            "id": "RyllzfcRZwTYD-RtpZkH-",
+            "name": "Eugen",
+            "age": 12,
+            "hobbies": [
+                "riding bicycle"
+            ]
+        },
+        {
+            "id": "Z0G7LkIucy8HTCwdkDtAg",
+            "name": "Caro",
+            "age": 18,
+            "hobbies": [
+                "riding unicorns"
+            ]
+        }
+    ]
+}
