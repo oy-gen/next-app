@@ -1,21 +1,29 @@
 {
-    "products": [],
-    "users": [
-        {
-            "id": "RyllzfcRZwTYD-RtpZkH-",
-            "name": "Eugen",
-            "age": 12,
-            "hobbies": [
-                "riding bicycle"
-            ]
-        },
-        {
-            "id": "Z0G7LkIucy8HTCwdkDtAg",
-            "name": "Caro",
-            "age": 18,
-            "hobbies": [
-                "riding unicorns"
-            ]
-        }
-    ]
+  "products": [],
+  "users": [
+    {
+      "id": "RyllzfcRZwTYD-RtpZkH-",
+      "name": "Carlos",
+      "age": 45,
+      "hobbies": ["riding bicycle"]
+    },
+    {
+      "id": "Z0G7LkIucy8HTCwdkDtAg",
+      "name": "Caro",
+      "age": 18,
+      "hobbies": ["riding unicorns"]
+    },
+    {
+      "id": "xfVjrzqpVb9oRv77yb--W",
+      "name": "Barbara Salesch",
+      "age": 34,
+      "hobbies": [
+        "More more more Hobby1",
+        "riding unicorns",
+        "More more Hobby",
+        "More more more Hobby2",
+        "More more more Hobby4"
+      ]
+    }
+  ]
 }
