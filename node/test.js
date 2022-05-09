@@ -42,7 +42,7 @@ async function addUser(user) {
   promises.writeFile('database.json', JSON.stringify(data, null, 4));
 }
 
-addUser({ id: nanoid(), name: 'Helene', age: 77, hobbies: ['singing'] });
+// addUser({ id: nanoid(), name: 'Helene', age: 77, hobbies: 'singing' });
 
 async function removeUser(userId) {
   const data = await getDatabase();
@@ -53,17 +53,28 @@ async function removeUser(userId) {
 
 //removeUser(1);
 
-async function updateUser(id, name, age, hobby) {
+async function updateUser(id, name, hobby) {
   const data = await getDatabase();
+
   data.users = data.users.map(user => {
     if (user.id === id) {
       user.name = name;
-      user.age = age;
-      user.hobbies = user.hobbies.push(hobby);
+      // let currentHobbies = user.hobbies;
+      // let newHobbies = currentHobbies.push(hobby);
+      user.hobbies = [hobby, ...user.hobbies];
     }
     return user;
   });
   promises.writeFile('database.json', JSON.stringify(data, null, 4));
 }
+// updateUser('xfVjrzqpVb9oRv77yb--W', 'Barbara Salesch', 'More more more Hobby');
 
-updateUser('xfVjrzqpVb9oRv77yb--W', 'Barbara Becker', 45, 'Tennis');
+async function removeHobby(id, hobby) {
+  const data = await getDatabase();
+  const user = data.users.filter(user => user.id === id);
+  user[0].hobbies = user[0].hobbies.filter(hobby_ => hobby_ !== hobby);
+
+  promises.writeFile('database.json', JSON.stringify(data, null, 4));
+}
+
+removeHobby('xfVjrzqpVb9oRv77yb--W', 'More more more Hobby3');

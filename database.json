@@ -4,8 +4,8 @@
     {
       "id": "RyllzfcRZwTYD-RtpZkH-",
       "name": "Carlos",
-      "hobbies": ["riding bicycle"],
-      "age": 45
+      "age": 45,
+      "hobbies": ["riding bicycle"]
     },
     {
       "id": "Z0G7LkIucy8HTCwdkDtAg",
@@ -15,9 +15,15 @@
     },
     {
       "id": "xfVjrzqpVb9oRv77yb--W",
-      "name": "Barbara",
+      "name": "Barbara Salesch",
       "age": 34,
-      "hobbies": ["riding unicorns"]
+      "hobbies": [
+        "More more more Hobby1",
+        "riding unicorns",
+        "More more Hobby",
+        "More more more Hobby2",
+        "More more more Hobby4"
+      ]
     }
   ]
 }
