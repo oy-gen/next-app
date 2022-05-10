@@ -2,10 +2,27 @@ import Card from '../components/Card';
 import CardsWrapper from '../components/CardsWrapper';
 import Nav from '../components/Nav';
 import useFetch from '../components/useFetch';
+import Button from '../components/Button';
 
 export default function CharactersPage() {
   const { data } = useFetch('https://rickandmortyapi.com/api/character/');
-  console.log(data);
+
+  //const [item, setItem] = useState({});
+  //console.log(data);
+
+  async function addItem(item) {
+    // console.log('Hier!!');
+    const res = await fetch('/api/collection/add', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(item),
+    });
+    const message = await res.json();
+    console.log(message);
+  }
+
   return (
     <>
       <CardsWrapper>
@@ -19,6 +36,13 @@ export default function CharactersPage() {
               <li>Gender: {character.gender}</li>
               <li>Location: {character.location.name}</li>
             </ul>
+            <button
+              onClick={() => {
+                addItem(character);
+              }}
+            >
+              Add to Collection
+            </button>
           </Card>
         ))}
       </CardsWrapper>
