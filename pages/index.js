@@ -1,12 +1,13 @@
-import styled from "styled-components";
-import CardsWrapper from "../components/CardsWrapper";
-import Nav from "../components/Nav";
+import styled from 'styled-components';
+import CardsWrapper from '../components/CardsWrapper';
+import Nav from '../components/Nav';
+import Form from '../components/Form';
 
 export default function Home() {
   return (
     <>
       <Title>Hallo Leute</Title>
-
+      <Form></Form>
       <CardsWrapper></CardsWrapper>
       <Nav></Nav>
     </>

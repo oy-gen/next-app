@@ -17,5 +17,5 @@ const UserSchema = new mongoose.Schema({
 });
 
 const model = mongoose.models.User || mongoose.model('User', UserSchema);
-// const model = mongoose.models.CURRY || mongoose.model('CURRY', UserSchema);
+// const model = mongoose.models.Curry || mongoose.model('Curry', UserSchema);
 export default model;

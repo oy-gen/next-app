@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 /* PetSchema will correspond to a collection in your MongoDB database. */
-const CharacterSchema = new mongoose.Schema({
+const FooSchema = new mongoose.Schema({
   name: {
     /* The name of this user */
 
@@ -16,7 +16,6 @@ const CharacterSchema = new mongoose.Schema({
   },
 });
 
-const CharacterModel =
-  mongoose.models.Character || mongoose.model('Character', CharacterSchema);
+const model = mongoose.models.Foo || mongoose.model('Foo', FooSchema);
 // const model = mongoose.models.Curry || mongoose.model('Curry', UserSchema);
-export default CharacterModel;
+export default model;
